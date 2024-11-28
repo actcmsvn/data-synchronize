@@ -1,5 +1,5 @@
 {
-    "name": "actcmsv/data-synchronize",
+    "name": "actcmsvn/data-synchronize",
     "description": "Make site ready in few steps",
     "type": "actcms-package",
     "autoload": {
