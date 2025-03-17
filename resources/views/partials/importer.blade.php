@@ -1,5 +1,5 @@
 @php
-    /** @var \ACTCMS\DataSynchronize\Importer\Importer $importer */
+    /** @var \Botble\DataSynchronize\Importer\Importer $importer */
 
     $acceptedFiles = Arr::join(array_map(fn ($item) => $item, $importer->getAcceptedFiles()), ',');
 @endphp

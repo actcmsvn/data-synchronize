@@ -1,15 +1,15 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Importer;
+namespace Botble\DataSynchronize\Importer;
 
-use ACTCMS\Base\Facades\Assets;
-use ACTCMS\Base\Facades\BaseHelper;
-use ACTCMS\DataSynchronize\Concerns\Importer\HasImportResults;
-use ACTCMS\DataSynchronize\Contracts\Importer\WithMapping;
-use ACTCMS\DataSynchronize\DataTransferObjects\ChunkImportResponse;
-use ACTCMS\DataSynchronize\DataTransferObjects\ChunkValidateResponse;
-use ACTCMS\DataSynchronize\Exporter\ExampleExporter;
-use ACTCMS\Media\Facades\RvMedia;
+use Botble\Base\Facades\Assets;
+use Botble\Base\Facades\BaseHelper;
+use Botble\DataSynchronize\Concerns\Importer\HasImportResults;
+use Botble\DataSynchronize\Contracts\Importer\WithMapping;
+use Botble\DataSynchronize\DataTransferObjects\ChunkImportResponse;
+use Botble\DataSynchronize\DataTransferObjects\ChunkValidateResponse;
+use Botble\DataSynchronize\Exporter\ExampleExporter;
+use Botble\Media\Facades\RvMedia;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Contracts\View\View;

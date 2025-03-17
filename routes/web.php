@@ -1,9 +1,9 @@
 <?php
 
-use ACTCMS\Base\Facades\AdminHelper;
-use ACTCMS\Base\Http\Middleware\DisableInDemoModeMiddleware;
-use ACTCMS\DataSynchronize\Http\Controllers\DataSynchronizeController;
-use ACTCMS\DataSynchronize\Http\Controllers\UploadController;
+use Botble\Base\Facades\AdminHelper;
+use Botble\Base\Http\Middleware\DisableInDemoModeMiddleware;
+use Botble\DataSynchronize\Http\Controllers\DataSynchronizeController;
+use Botble\DataSynchronize\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
 
 AdminHelper::registerRoutes(function () {

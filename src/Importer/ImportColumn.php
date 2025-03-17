@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Importer;
+namespace Botble\DataSynchronize\Importer;
 
 class ImportColumn
 {

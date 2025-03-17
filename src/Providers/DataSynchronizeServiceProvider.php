@@ -1,20 +1,20 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Providers;
+namespace Botble\DataSynchronize\Providers;
 
-use ACTCMS\Base\Facades\DashboardMenu;
-use ACTCMS\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
-use ACTCMS\Base\Supports\ServiceProvider;
-use ACTCMS\Base\Traits\LoadAndPublishDataTrait;
-use ACTCMS\DataSynchronize\Commands\ClearChunksCommand;
-use ACTCMS\DataSynchronize\Commands\ExportCommand;
-use ACTCMS\DataSynchronize\Commands\ExportControllerMakeCommand;
-use ACTCMS\DataSynchronize\Commands\ExporterMakeCommand;
-use ACTCMS\DataSynchronize\Commands\ImportCommand;
-use ACTCMS\DataSynchronize\Commands\ImportControllerMakeCommand;
-use ACTCMS\DataSynchronize\Commands\ImporterMakeCommand;
-use ACTCMS\DataSynchronize\PanelSections\ExportPanelSection;
-use ACTCMS\DataSynchronize\PanelSections\ImportPanelSection;
+use Botble\Base\Facades\DashboardMenu;
+use Botble\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
+use Botble\Base\Supports\ServiceProvider;
+use Botble\Base\Traits\LoadAndPublishDataTrait;
+use Botble\DataSynchronize\Commands\ClearChunksCommand;
+use Botble\DataSynchronize\Commands\ExportCommand;
+use Botble\DataSynchronize\Commands\ExportControllerMakeCommand;
+use Botble\DataSynchronize\Commands\ExporterMakeCommand;
+use Botble\DataSynchronize\Commands\ImportCommand;
+use Botble\DataSynchronize\Commands\ImportControllerMakeCommand;
+use Botble\DataSynchronize\Commands\ImporterMakeCommand;
+use Botble\DataSynchronize\PanelSections\ExportPanelSection;
+use Botble\DataSynchronize\PanelSections\ImportPanelSection;
 use Illuminate\Console\Scheduling\Schedule;
 
 class DataSynchronizeServiceProvider extends ServiceProvider

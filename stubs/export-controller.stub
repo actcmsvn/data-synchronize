@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use ACTCMS\DataSynchronize\Exporter\Exporter;
-use ACTCMS\DataSynchronize\Http\Controllers\ExportController;
+use Botble\DataSynchronize\Exporter\Exporter;
+use Botble\DataSynchronize\Http\Controllers\ExportController;
 use {{ exporterNamespace }};
 
 class {{ class }} extends ExportController

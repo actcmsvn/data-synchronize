@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Exporter;
+namespace Botble\DataSynchronize\Exporter;
 
 class ExportCounter
 {

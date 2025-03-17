@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Botble\DataSynchronize\Commands;
 
-use ACTCMS\DataSynchronize\Exporter\Exporter;
+use Botble\DataSynchronize\Exporter\Exporter;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
@@ -94,7 +94,7 @@ class ExportCommand extends Command implements PromptsForMissingInput
     protected function promptForMissingArgumentsUsing(): array
     {
         return [
-            'exporter' => ['What is the exporter class name?', 'E.g. ACTCMS\Blog\Exporters\PostExporter'],
+            'exporter' => ['What is the exporter class name?', 'E.g. Botble\Blog\Exporters\PostExporter'],
             'path' => ['Where do you want to save the file?', 'E.g. storage/app/exports'],
         ];
     }

@@ -1,10 +1,10 @@
 {
     "name": "actcmsvn/data-synchronize",
-    "description": "Make site ready in few steps",
+    "description": "Chuẩn bị trang web trong vài bước",
     "type": "actcms-package",
     "autoload": {
         "psr-4": {
-            "ACTCMS\\DataSynchronize\\": "src/"
+            "Botble\\DataSynchronize\\": "src/"
         }
     },
     "require": {
@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ACTCMS\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
+                "Botble\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
             ]
         }
     }

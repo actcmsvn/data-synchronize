@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Http\Requests;
+namespace Botble\DataSynchronize\Http\Requests;
 
-use ACTCMS\Support\Http\Requests\Request;
+use Botble\Support\Http\Requests\Request;
 
 class DownloadTemplateRequest extends Request
 {

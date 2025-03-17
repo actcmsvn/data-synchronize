@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Exporter;
+namespace Botble\DataSynchronize\Exporter;
 
-use ACTCMS\DataSynchronize\Importer\ImportColumn;
+use Botble\DataSynchronize\Importer\ImportColumn;
 use Illuminate\Support\Collection;
 
 class ExampleExporter extends Exporter

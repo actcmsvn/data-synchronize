@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Botble\DataSynchronize\Commands;
 
 use Illuminate\Support\Stringable;
 
@@ -137,9 +137,9 @@ class ExporterMakeCommand extends GeneratorCommand
     protected function createPanelSection(): void
     {
         $stub = <<<'PHP'
-        use ACTCMS\Base\Facades\PanelSectionManager;
-        use ACTCMS\Base\PanelSections\PanelSectionItem;
-        use ACTCMS\DataSynchronize\PanelSections\ExportPanelSection;
+        use Botble\Base\Facades\PanelSectionManager;
+        use Botble\Base\PanelSections\PanelSectionItem;
+        use Botble\DataSynchronize\PanelSections\ExportPanelSection;
 
         PanelSectionManager::setGroupId('data-synchronize')->beforeRendering(function () {
             PanelSectionManager::default()->registerItem(

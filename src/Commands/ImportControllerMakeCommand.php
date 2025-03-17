@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Botble\DataSynchronize\Commands;
 
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;

@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Concerns\Exporter;
+namespace Botble\DataSynchronize\Concerns\Exporter;
 
 use Illuminate\Contracts\View\View;
 

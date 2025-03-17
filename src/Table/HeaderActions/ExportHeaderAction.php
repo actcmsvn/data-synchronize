@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Table\HeaderActions;
+namespace Botble\DataSynchronize\Table\HeaderActions;
 
-use ACTCMS\Table\HeaderActions\HeaderAction;
+use Botble\Table\HeaderActions\HeaderAction;
 
 class ExportHeaderAction extends HeaderAction
 {

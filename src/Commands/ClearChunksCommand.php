@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Botble\DataSynchronize\Commands;
 
-use ACTCMS\Base\Facades\BaseHelper;
+use Botble\Base\Facades\BaseHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
