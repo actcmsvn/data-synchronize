@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DataSynchronize\Http\Requests;
+namespace ACTCMS\DataSynchronize\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use ACTCMS\Support\Http\Requests\Request;
 
 class ImportRequest extends Request
 {

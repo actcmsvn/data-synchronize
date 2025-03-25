@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use Botble\DataSynchronize\Exporter\ExportColumn;
-use Botble\DataSynchronize\Exporter\Exporter;
+use ACTCMS\DataSynchronize\Exporter\ExportColumn;
+use ACTCMS\DataSynchronize\Exporter\Exporter;
 use Illuminate\Support\Collection;
 
 class {{ class }} extends Exporter

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\DataSynchronize\Http\Controllers;
+namespace ACTCMS\DataSynchronize\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
+use ACTCMS\Base\Http\Controllers\BaseController;
+use ACTCMS\Base\Supports\Breadcrumb;
 
 class DataSynchronizeController extends BaseController
 {

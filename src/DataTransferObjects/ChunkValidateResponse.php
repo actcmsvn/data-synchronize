@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\DataSynchronize\DataTransferObjects;
+namespace ACTCMS\DataSynchronize\DataTransferObjects;
 
 class ChunkValidateResponse extends ChunkResponse
 {

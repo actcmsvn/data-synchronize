@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DataSynchronize\PanelSections;
+namespace ACTCMS\DataSynchronize\PanelSections;
 
-use Botble\Base\PanelSections\PanelSection;
+use ACTCMS\Base\PanelSections\PanelSection;
 
 class ImportPanelSection extends PanelSection
 {

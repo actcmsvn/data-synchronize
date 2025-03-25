@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\DataSynchronize\Http\Controllers;
+namespace ACTCMS\DataSynchronize\Http\Controllers;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Supports\Breadcrumb;
-use Botble\DataSynchronize\Http\Requests\DownloadTemplateRequest;
-use Botble\DataSynchronize\Http\Requests\ImportRequest;
-use Botble\DataSynchronize\Importer\Importer;
+use ACTCMS\Base\Facades\BaseHelper;
+use ACTCMS\Base\Http\Controllers\BaseController;
+use ACTCMS\Base\Supports\Breadcrumb;
+use ACTCMS\DataSynchronize\Http\Requests\DownloadTemplateRequest;
+use ACTCMS\DataSynchronize\Http\Requests\ImportRequest;
+use ACTCMS\DataSynchronize\Importer\Importer;
 use Exception;
 use Illuminate\Http\Request;
 

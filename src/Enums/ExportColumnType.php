@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DataSynchronize\Enums;
+namespace ACTCMS\DataSynchronize\Enums;
 
-use Botble\Base\Supports\Enum;
+use ACTCMS\Base\Supports\Enum;
 
 class ExportColumnType extends Enum
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DataSynchronize\Exporter;
+namespace ACTCMS\DataSynchronize\Exporter;
 
-use Botble\DataSynchronize\Enums\ExportColumnType;
+use ACTCMS\DataSynchronize\Enums\ExportColumnType;
 
 class ExportColumn
 {

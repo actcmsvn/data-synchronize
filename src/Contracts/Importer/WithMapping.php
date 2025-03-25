@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\DataSynchronize\Contracts\Importer;
+namespace ACTCMS\DataSynchronize\Contracts\Importer;
 
 interface WithMapping
 {

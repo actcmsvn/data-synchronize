@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DataSynchronize\Commands;
+namespace ACTCMS\DataSynchronize\Commands;
 
-use Botble\DataSynchronize\Exporter\Exporter;
+use ACTCMS\DataSynchronize\Exporter\Exporter;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\DataSynchronize\Http\Controllers;
+namespace ACTCMS\DataSynchronize\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Media\Chunks\Exceptions\UploadMissingFileException;
-use Botble\Media\Chunks\Handler\DropZoneUploadHandler;
-use Botble\Media\Chunks\Receiver\FileReceiver;
+use ACTCMS\Base\Http\Controllers\BaseController;
+use ACTCMS\Base\Http\Responses\BaseHttpResponse;
+use ACTCMS\Media\Chunks\Exceptions\UploadMissingFileException;
+use ACTCMS\Media\Chunks\Handler\DropZoneUploadHandler;
+use ACTCMS\Media\Chunks\Receiver\FileReceiver;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

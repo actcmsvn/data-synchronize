@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use Botble\DataSynchronize\Http\Controllers\ImportController;
-use Botble\DataSynchronize\Importer\Importer;
+use ACTCMS\DataSynchronize\Http\Controllers\ImportController;
+use ACTCMS\DataSynchronize\Importer\Importer;
 use {{ importerNamespace }};
 
 class {{ class }} extends ImportController
