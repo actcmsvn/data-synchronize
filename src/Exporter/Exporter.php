@@ -36,7 +36,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     protected string $url;
 
     /**
-     * @return \Botble\DataSynchronize\Exporter\ExportColumn[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportColumn[]
      */
     abstract public function columns(): array;
 
@@ -69,7 +69,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Botble\DataSynchronize\Exporter\ExportCounter[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportCounter[]
      */
     public function getCounters(): array
     {
@@ -167,7 +167,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Botble\DataSynchronize\Exporter\ExportColumn[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportColumn[]
      */
     public function getColumns(): array
     {
@@ -220,7 +220,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Botble\DataSynchronize\Exporter\ExportColumn[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportColumn[]
      */
     public function getAcceptedColumns(): array
     {
