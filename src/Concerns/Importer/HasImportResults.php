@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Concerns\Importer;
+namespace Actcmsvn\DataSynchronize\Concerns\Importer;
 
 use Illuminate\Support\Collection;
 

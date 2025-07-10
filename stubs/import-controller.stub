@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use ACTCMS\DataSynchronize\Http\Controllers\ImportController;
-use ACTCMS\DataSynchronize\Importer\Importer;
+use Actcmsvn\DataSynchronize\Http\Controllers\ImportController;
+use Actcmsvn\DataSynchronize\Importer\Importer;
 use {{ importerNamespace }};
 
 class {{ class }} extends ImportController

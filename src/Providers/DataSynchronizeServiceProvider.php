@@ -1,20 +1,21 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Providers;
+namespace Actcmsvn\DataSynchronize\Providers;
 
-use ACTCMS\Base\Facades\DashboardMenu;
-use ACTCMS\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
-use ACTCMS\Base\Supports\ServiceProvider;
-use ACTCMS\Base\Traits\LoadAndPublishDataTrait;
-use ACTCMS\DataSynchronize\Commands\ClearChunksCommand;
-use ACTCMS\DataSynchronize\Commands\ExportCommand;
-use ACTCMS\DataSynchronize\Commands\ExportControllerMakeCommand;
-use ACTCMS\DataSynchronize\Commands\ExporterMakeCommand;
-use ACTCMS\DataSynchronize\Commands\ImportCommand;
-use ACTCMS\DataSynchronize\Commands\ImportControllerMakeCommand;
-use ACTCMS\DataSynchronize\Commands\ImporterMakeCommand;
-use ACTCMS\DataSynchronize\PanelSections\ExportPanelSection;
-use ACTCMS\DataSynchronize\PanelSections\ImportPanelSection;
+use Actcmsvn\Base\Facades\DashboardMenu;
+use Actcmsvn\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
+use Actcmsvn\Base\Supports\ServiceProvider;
+use Actcmsvn\Base\Traits\LoadAndPublishDataTrait;
+use Actcmsvn\DataSynchronize\Commands\ClearChunksCommand;
+use Actcmsvn\DataSynchronize\Commands\ExportCommand;
+use Actcmsvn\DataSynchronize\Commands\ExportControllerMakeCommand;
+use Actcmsvn\DataSynchronize\Commands\ExporterMakeCommand;
+use Actcmsvn\DataSynchronize\Commands\ImportCommand;
+use Actcmsvn\DataSynchronize\Commands\ImportControllerMakeCommand;
+use Actcmsvn\DataSynchronize\Commands\ImporterMakeCommand;
+use Actcmsvn\DataSynchronize\Commands\TestLargeExportCommand;
+use Actcmsvn\DataSynchronize\PanelSections\ExportPanelSection;
+use Actcmsvn\DataSynchronize\PanelSections\ImportPanelSection;
 use Illuminate\Console\Scheduling\Schedule;
 
 class DataSynchronizeServiceProvider extends ServiceProvider
@@ -42,6 +43,7 @@ class DataSynchronizeServiceProvider extends ServiceProvider
                 ClearChunksCommand::class,
                 ExportCommand::class,
                 ImportCommand::class,
+                TestLargeExportCommand::class,
             ]);
 
             $this->app->afterResolving(Schedule::class, function (Schedule $schedule) {

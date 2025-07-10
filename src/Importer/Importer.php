@@ -1,15 +1,15 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Importer;
+namespace Actcmsvn\DataSynchronize\Importer;
 
-use ACTCMS\Base\Facades\Assets;
-use ACTCMS\Base\Facades\BaseHelper;
-use ACTCMS\DataSynchronize\Concerns\Importer\HasImportResults;
-use ACTCMS\DataSynchronize\Contracts\Importer\WithMapping;
-use ACTCMS\DataSynchronize\DataTransferObjects\ChunkImportResponse;
-use ACTCMS\DataSynchronize\DataTransferObjects\ChunkValidateResponse;
-use ACTCMS\DataSynchronize\Exporter\ExampleExporter;
-use ACTCMS\Media\Facades\RvMedia;
+use Actcmsvn\Base\Facades\Assets;
+use Actcmsvn\Base\Facades\BaseHelper;
+use Actcmsvn\DataSynchronize\Concerns\Importer\HasImportResults;
+use Actcmsvn\DataSynchronize\Contracts\Importer\WithMapping;
+use Actcmsvn\DataSynchronize\DataTransferObjects\ChunkImportResponse;
+use Actcmsvn\DataSynchronize\DataTransferObjects\ChunkValidateResponse;
+use Actcmsvn\DataSynchronize\Exporter\ExampleExporter;
+use Actcmsvn\Media\Facades\RvMedia;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Contracts\View\View;
@@ -140,16 +140,18 @@ abstract class Importer
             ->addScripts('dropzone')
             ->addStyles('dropzone');
 
+        return view($this->getView(), ['importer' => $this]);
+    }
+
+    protected function getView(): string
+    {
         $view = 'packages/data-synchronize::import';
 
         if ($this->renderWithoutLayout) {
             $view = 'packages/data-synchronize::partials.importer';
         }
 
-        return view(
-            apply_filters('data_synchronize_importer_view', $view),
-            ['importer' => $this]
-        );
+        return apply_filters('data_synchronize_importer_view', $view);
     }
 
     public function headerToSnakeCase(): bool

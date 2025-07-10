@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\PanelSections;
+namespace Actcmsvn\DataSynchronize\PanelSections;
 
-use ACTCMS\Base\PanelSections\PanelSection;
+use Actcmsvn\Base\PanelSections\PanelSection;
 
 class ExportPanelSection extends PanelSection
 {

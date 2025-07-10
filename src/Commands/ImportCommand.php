@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Actcmsvn\DataSynchronize\Commands;
 
-use ACTCMS\DataSynchronize\Importer\Importer;
+use Actcmsvn\DataSynchronize\Importer\Importer;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Facades\Storage;
@@ -131,7 +131,7 @@ class ImportCommand extends Command implements PromptsForMissingInput
     protected function promptForMissingArgumentsUsing(): array
     {
         return [
-            'importer' => ['What is the importer class name?', 'E.g. ACTCMS\Blog\Importers\PostImporter'],
+            'importer' => ['What is the importer class name?', 'E.g. Actcmsvn\Blog\Importers\PostImporter'],
             'path' => ['Where is the source Excel/CSV file?', 'E.g. ~/Downloads/posts.xlsx'],
         ];
     }

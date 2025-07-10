@@ -1,10 +1,10 @@
 {
     "name": "actcmsvn/data-synchronize",
-    "description": "Chuẩn bị trang web trong vài bước",
-    "type": "actcms-package",
+    "description": "Make site ready in few steps",
+    "type": "actcmsvn-package",
     "autoload": {
         "psr-4": {
-            "ACTCMS\\DataSynchronize\\": "src/"
+            "Actcmsvn\\DataSynchronize\\": "src/"
         }
     },
     "require": {
@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ACTCMS\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
+                "Actcmsvn\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
             ]
         }
     }

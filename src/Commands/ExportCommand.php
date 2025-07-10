@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Actcmsvn\DataSynchronize\Commands;
 
-use ACTCMS\DataSynchronize\Exporter\Exporter;
+use Actcmsvn\DataSynchronize\Exporter\Exporter;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
@@ -57,7 +57,24 @@ class ExportCommand extends Command implements PromptsForMissingInput
 
         $exporter->format($format);
 
+        // Configure memory optimization
+        if ($this->option('optimize-memory')) {
+            $exporter->setOptimizeMemory(true);
+        }
+
+        // Configure chunk size if provided
+        if ($chunkSize = $this->option('chunk-size')) {
+            if (method_exists($exporter, 'setChunkSize')) {
+                $exporter->setChunkSize((int) $chunkSize);
+            }
+        }
+
+        // Show export info
         $this->components->info("Exporting {$exporter->getLabel()} to <comment>{$path}</comment>");
+
+        if (method_exists($exporter, 'getChunkSize')) {
+            $this->components->info("Using chunk size: {$exporter->getChunkSize()}");
+        }
 
         try {
             $exporter->export()
@@ -80,6 +97,8 @@ class ExportCommand extends Command implements PromptsForMissingInput
     {
         return [
             ['format', null, InputOption::VALUE_OPTIONAL, 'The format of the file (csv, xls, xlsx)'],
+            ['chunk-size', null, InputOption::VALUE_OPTIONAL, 'Number of records to process per chunk'],
+            ['optimize-memory', null, InputOption::VALUE_NONE, 'Enable memory optimization for large exports'],
         ];
     }
 
@@ -94,7 +113,7 @@ class ExportCommand extends Command implements PromptsForMissingInput
     protected function promptForMissingArgumentsUsing(): array
     {
         return [
-            'exporter' => ['What is the exporter class name?', 'E.g. ACTCMS\Blog\Exporters\PostExporter'],
+            'exporter' => ['What is the exporter class name?', 'E.g. Actcmsvn\Blog\Exporters\PostExporter'],
             'path' => ['Where do you want to save the file?', 'E.g. storage/app/exports'],
         ];
     }

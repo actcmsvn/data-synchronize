@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\DataTransferObjects;
+namespace Actcmsvn\DataSynchronize\DataTransferObjects;
 
 class ChunkImportResponse extends ChunkResponse
 {

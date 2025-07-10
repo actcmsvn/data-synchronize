@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Exporter;
+namespace Actcmsvn\DataSynchronize\Exporter;
 
 class ExportCounter
 {

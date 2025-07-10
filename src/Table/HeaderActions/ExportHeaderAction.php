@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Table\HeaderActions;
+namespace Actcmsvn\DataSynchronize\Table\HeaderActions;
 
-use ACTCMS\Table\HeaderActions\HeaderAction;
+use Actcmsvn\Table\HeaderActions\HeaderAction;
 
 class ExportHeaderAction extends HeaderAction
 {

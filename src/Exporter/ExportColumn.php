@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Exporter;
+namespace Actcmsvn\DataSynchronize\Exporter;
 
-use ACTCMS\DataSynchronize\Enums\ExportColumnType;
+use Actcmsvn\DataSynchronize\Enums\ExportColumnType;
 
 class ExportColumn
 {

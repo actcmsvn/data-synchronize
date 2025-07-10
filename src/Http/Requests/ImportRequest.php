@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Http\Requests;
+namespace Actcmsvn\DataSynchronize\Http\Requests;
 
-use ACTCMS\Support\Http\Requests\Request;
+use Actcmsvn\Support\Http\Requests\Request;
 
 class ImportRequest extends Request
 {

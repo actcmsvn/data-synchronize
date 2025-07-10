@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Commands;
+namespace Actcmsvn\DataSynchronize\Commands;
 
 use Illuminate\Console\GeneratorCommand as BaseGeneratorCommand;
 use Illuminate\Support\Arr;

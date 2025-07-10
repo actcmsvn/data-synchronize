@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DataSynchronize\Importer;
+namespace Actcmsvn\DataSynchronize\Importer;
 
 class ImportColumn
 {

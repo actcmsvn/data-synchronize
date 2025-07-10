@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use ACTCMS\DataSynchronize\Importer\ImportColumn;
-use ACTCMS\DataSynchronize\Importer\Importer;
+use Actcmsvn\DataSynchronize\Importer\ImportColumn;
+use Actcmsvn\DataSynchronize\Importer\Importer;
 
 class {{ class }} extends Importer
 {

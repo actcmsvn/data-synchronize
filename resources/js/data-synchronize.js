@@ -14,7 +14,7 @@ $(() => {
                     const responseData = isJsonBlob(data) ? await (data)?.text() : data || {};
                     const responseJson = (typeof responseData === "string") ? JSON.parse(responseData) : responseData;
 
-                    Actcms.showError(responseJson?.message || $form.data('error-message'))
+                    Actcmsvn.showError(responseJson?.message || $form.data('error-message'))
 
                     return
                 }
@@ -26,11 +26,10 @@ $(() => {
                 a.click()
                 window.URL.revokeObjectURL(url)
 
-                Actcms.showSuccess($form.data('success-message'))
+                Actcmsvn.showSuccess($form.data('success-message'))
             })
             .catch((error) => {
-                console.log(error)
-                Actcms.showError($form.data('error-message'))
+                Actcmsvn.showError(error.message ? (error.statusText + ': ' + error.message) : form.data('error-message'))
             })
     }
 
@@ -79,7 +78,7 @@ $(() => {
         })
 
         const cleanup = () => {
-            Actcms.hideButtonLoading($button)
+            Actcmsvn.hideButtonLoading($button)
             $button.prop('disabled', true).addClass('disabled')
             dropzone.removeAllFiles()
         }
@@ -168,7 +167,7 @@ $(() => {
             failures = []
 
             output($form.data('uploading-message'))
-            Actcms.showButtonLoading($button)
+            Actcmsvn.showButtonLoading($button)
         })
 
         dropzone.on('success', (file, { data, error, message }) => {
