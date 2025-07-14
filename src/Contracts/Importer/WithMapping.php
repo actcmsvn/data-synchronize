@@ -1,6 +1,6 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Contracts\Importer;
+namespace ACTCMS\DataSynchronize\Contracts\Importer;
 
 interface WithMapping
 {

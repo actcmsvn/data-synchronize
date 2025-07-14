@@ -1,8 +1,8 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Enums;
+namespace ACTCMS\DataSynchronize\Enums;
 
-use Actcmsvn\Base\Supports\Enum;
+use ACTCMS\Base\Supports\Enum;
 
 class ExportColumnType extends Enum
 {

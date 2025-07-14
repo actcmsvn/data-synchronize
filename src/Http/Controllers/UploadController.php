@@ -1,12 +1,12 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Http\Controllers;
+namespace ACTCMS\DataSynchronize\Http\Controllers;
 
-use Actcmsvn\Base\Http\Controllers\BaseController;
-use Actcmsvn\Base\Http\Responses\BaseHttpResponse;
-use Actcmsvn\Media\Chunks\Exceptions\UploadMissingFileException;
-use Actcmsvn\Media\Chunks\Handler\DropZoneUploadHandler;
-use Actcmsvn\Media\Chunks\Receiver\FileReceiver;
+use ACTCMS\Base\Http\Controllers\BaseController;
+use ACTCMS\Base\Http\Responses\BaseHttpResponse;
+use ACTCMS\Media\Chunks\Exceptions\UploadMissingFileException;
+use ACTCMS\Media\Chunks\Handler\DropZoneUploadHandler;
+use ACTCMS\Media\Chunks\Receiver\FileReceiver;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Http\Controllers;
+namespace ACTCMS\DataSynchronize\Http\Controllers;
 
-use Actcmsvn\Base\Http\Controllers\BaseController;
-use Actcmsvn\Base\Supports\Breadcrumb;
+use ACTCMS\Base\Http\Controllers\BaseController;
+use ACTCMS\Base\Supports\Breadcrumb;
 
 class DataSynchronizeController extends BaseController
 {

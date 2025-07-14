@@ -1,6 +1,6 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Commands;
+namespace ACTCMS\DataSynchronize\Commands;
 
 use Illuminate\Support\Stringable;
 
@@ -120,9 +120,9 @@ class ImporterMakeCommand extends GeneratorCommand
     protected function createPanelSection(): void
     {
         $stub = <<<'PHP'
-        use Actcmsvn\Base\Facades\PanelSectionManager;
-        use Actcmsvn\Base\PanelSections\PanelSectionItem;
-        use Actcmsvn\DataSynchronize\PanelSections\ImportPanelSection;
+        use ACTCMS\Base\Facades\PanelSectionManager;
+        use ACTCMS\Base\PanelSections\PanelSectionItem;
+        use ACTCMS\DataSynchronize\PanelSections\ImportPanelSection;
 
         PanelSectionManager::setGroupId('data-synchronize')->beforeRendering(function () {
             PanelSectionManager::default()->registerItem(

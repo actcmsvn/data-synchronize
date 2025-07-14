@@ -1,11 +1,11 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Exporter;
+namespace ACTCMS\DataSynchronize\Exporter;
 
-use Actcmsvn\Base\Facades\Assets;
-use Actcmsvn\Base\Facades\BaseHelper;
-use Actcmsvn\DataSynchronize\Concerns\Exporter\HasEmptyState;
-use Actcmsvn\DataSynchronize\Enums\ExportColumnType;
+use ACTCMS\Base\Facades\Assets;
+use ACTCMS\Base\Facades\BaseHelper;
+use ACTCMS\DataSynchronize\Concerns\Exporter\HasEmptyState;
+use ACTCMS\DataSynchronize\Enums\ExportColumnType;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Arr;
@@ -40,7 +40,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     protected int $memoryCheckInterval = 1000;
 
     /**
-     * @return \Actcmsvn\DataSynchronize\Exporter\ExportColumn[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportColumn[]
      */
     abstract public function columns(): array;
 
@@ -73,7 +73,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Actcmsvn\DataSynchronize\Exporter\ExportCounter[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportCounter[]
      */
     public function getCounters(): array
     {
@@ -171,7 +171,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Actcmsvn\DataSynchronize\Exporter\ExportColumn[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportColumn[]
      */
     public function getColumns(): array
     {
@@ -235,7 +235,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Actcmsvn\DataSynchronize\Exporter\ExportColumn[]
+     * @return \ACTCMS\DataSynchronize\Exporter\ExportColumn[]
      */
     public function getAcceptedColumns(): array
     {

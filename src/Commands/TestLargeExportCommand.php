@@ -1,8 +1,8 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Commands;
+namespace ACTCMS\DataSynchronize\Commands;
 
-use Actcmsvn\Ecommerce\Exporters\ProductExporter;
+use ACTCMS\Ecommerce\Exporters\ProductExporter;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

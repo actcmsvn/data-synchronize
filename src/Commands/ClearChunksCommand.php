@@ -1,8 +1,8 @@
 <?php
 
-namespace Actcmsvn\DataSynchronize\Commands;
+namespace ACTCMS\DataSynchronize\Commands;
 
-use Actcmsvn\Base\Facades\BaseHelper;
+use ACTCMS\Base\Facades\BaseHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;

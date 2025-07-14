@@ -4,7 +4,7 @@
     "type": "actcmsvn-package",
     "autoload": {
         "psr-4": {
-            "Actcmsvn\\DataSynchronize\\": "src/"
+            "ACTCMS\\DataSynchronize\\": "src/"
         }
     },
     "require": {
@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Actcmsvn\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
+                "ACTCMS\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
             ]
         }
     }
